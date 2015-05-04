@@ -70,7 +70,7 @@ TIME=$(strftime "%Y-%m-%d @ %H.%M.%S" "$EPOCHSECONDS")
 
 	# If the POSH_FILE exists as a readable file, source it.
 	# !! If it does not exist, then PUSHOVER_TOKEN and PUSHOVER_USER_KEY must be defined in ~/.zshenv
-if [ -f "POSH_FILE" -a -r "POSH_FILE" ]
+if [ -f "$POSH_FILE" -a -r "$POSH_FILE" ]
 then
 		source "${POSH_FILE}"
 fi
